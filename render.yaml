@@ -1,0 +1,25 @@
+# Render Blueprint — deploy this bot to Render with one click.
+# Docs: https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: savenileshya-bot
+    runtime: python
+    plan: free            # change to 'starter' for always-on + persistent disk
+    region: oregon         # change to your nearest region
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash bash.sh
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: SESSION
+        sync: false
+      - key: AUTH
+        sync: false
+      - key: FORCESUB
+        sync: false

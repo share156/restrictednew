@@ -1,0 +1,13 @@
+# Github.com-Vasusen-code
+# Pinned: Werkzeug must stay <3.0 to remain compatible with Flask 2.2.5.
+
+https://github.com/vasusen-code/Telethon/archive/refs/tags/v1.24.0.zip
+https://github.com/vasusen-code/ethon/archive/refs/tags/v0.1.5.zip
+cryptg
+tgcrypto
+pyrogram
+python-decouple
+Flask==2.2.5
+Werkzeug==2.2.3
+gunicorn==21.2.0
+aiohttp==3.8.5
